@@ -414,7 +414,7 @@ with lib;
     systemd.network.enable = true;
     networking.useNetworkd = true;
     networking.dhcpcd.enable = false;
-    services.resolved.dnssec = "false";
+    services.resolved.settings.Resolve.DNSSEC = "false";
     networking.useDHCP = true;
     networking.firewall.enable = true; # default
     networking.nftables.enable = true;
